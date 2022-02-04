@@ -1,0 +1,38 @@
+# Init Sensei
+
+This method initializes a brand new Sensei node.  It can only be called once during intial setup.  It is used to set your node username, alias, passphrase, and initial configuration.
+
+This method will also instantiate your seed phrase and `sensei.macaroon` file.  This means this endpoint is unauthenticated.
+
+
+### Endpoint
+
+POST `/v1/init`
+
+### Authentication
+
+No authentication required.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| username | String | Used for logging into the web administration panel |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
+| alias | String | The name of your node that will be broadcast to the lightning network |
+| electrum_url| String | The connection string for your electrum server |
+| start | Boolean | Whether or not to also unlock and start your node upon successful init |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | Your node public key.  This is often described as your node's id |
+| macaroon | String | Hex encoded `sensei.macaroon` file |
+| external_id | String | An internal identifier for your node |
+| role | String | Designates the type of node that was intialized |
+

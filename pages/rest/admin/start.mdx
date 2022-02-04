@@ -1,0 +1,30 @@
+# Start Sensei
+
+This method starts the Sensei node. On success it will include a Set-Cookie header that contains your macaroon information.  This can be used to start and login to your node using one request. 
+
+### Endpoint
+
+POST `/v1/start`
+
+### Authentication
+
+This request is unauthenticated but requires a valid passphrase.
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | Your node public key.  This is often described as your node's id |
+| macaroon | String | Hex encoded `sensei.macaroon` file |
+

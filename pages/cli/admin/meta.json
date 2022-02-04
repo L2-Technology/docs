@@ -1,0 +1,6 @@
+{
+    "init": "init",
+    "start": "start",
+    "createnode": "createnode",
+    "listnodes": "listnodes"
+}

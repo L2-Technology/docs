@@ -1,0 +1,19 @@
+{
+    "get_address": "Get Address",
+    "get_balance": "Get Balance",
+    "channels": "List Channels",
+    "payments": "List Payments",
+    "info": "Node Info",
+    "peers": "List Peers",
+    "stop": "Stop Node",
+    "start": "Start Node",
+    "invoices": "Create Invoice",
+    "pay_invoice": "Pay Invoice",
+    "label_payment": "Label Payment",
+    "delete_payment": "Delete Payment",
+    "open_channel": "Open Channel",
+    "close_channel": "Close Channel",
+    "keysend": "Keysend",
+    "connect_peer": "Connect Peer",
+    "sign_message": "Sign Message"
+}

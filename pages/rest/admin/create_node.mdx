@@ -1,0 +1,34 @@
+# Create Node
+
+This method will create a new lightweight node.  You must provide a username and passrphase that will be used to log into the node's administration panel.
+
+The method will return the nodes pubkey and macaroon.  This information is required to interact with the node in the future.
+
+### Endpoint
+
+POST `/v1/nodes`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| username | String | Used for logging into the web administration panel |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
+| alias | String | The name of your node that will be broadcast to the lightning network |
+| start | Boolean | Whether or not to also unlock and start your node upon successful init |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | The node's public key.  This is often described as the node's id |
+| macaroon | String | Hex encoded `sensei.macaroon` file |

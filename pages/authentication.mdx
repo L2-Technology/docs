@@ -1,0 +1,15 @@
+# Authentication
+
+Sensei uses macaroons for authentication. On the first startup Sensei will generate an `admin.macaroon` file and write it into the node's data directory.  The `admin.macaroon` will allow access to all of the api endpoints.  A macaroon needs to be included in all api requests to properly authenticate the request.
+
+Currently Sensei only supports the single `admin.macaroon` file but in a future version it will support more fine-grained access control. 
+
+### HTTP API
+
+The macaroon value must be included either in an HTTP Header or HTTP Cookie with name 'macaroon`.
+
+Sensei exposes a `/v1/login` and `/v1/logout` endpoints that can be used to set and remove the macaroon cookie automatically.  The `login` endpoint requires the node's `username` and `passphrase` to authenticate and the response will include a `Set-Cookie` header that contains the admin macaroon.
+
+### GRPC API
+
+The macaroon value must be set as part of the request metadata using the key `macaroon`.

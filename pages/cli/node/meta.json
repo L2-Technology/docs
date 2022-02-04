@@ -1,0 +1,16 @@
+{
+    "startnode": "startnode",
+    "getbalance":"getbalance",
+    "getaddress":"getaddress",
+    "nodeinfo":"nodeinfo",
+    "connectpeer":"connectpeer",
+    "listpeers":"listpeers",
+    "openchannel":"openchannel",
+    "closechannel":"closechannel",
+    "listchannels":"listchannels",
+    "createinvoice":"createinvoice",
+    "payinvoice":"payinvoice",
+    "keysend": "keysend",
+    "listpayments":"listpayments",
+    "signmessage":"signmessage"
+}

@@ -1,0 +1,31 @@
+# Node Status
+
+Returns information about your node.
+
+### Endpoint
+
+GET `/v1/status`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+
+### Request Parameters
+
+There are no request parameters.
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| alias | String | The alias used to name your node on the lightning network |
+| created| Boolean | A flag for whether or not the admin node has been setup yet |
+| running | Boolean | A flag for whether or not the admin node is running |
+| authenticated | Boolean | A flag for whether or not this request was properly authenticated |
+| pubkey | String | Your node public key.  This is often described as your node's id |
+| username | String | The username used to login to this node's admin panel |
+| role | String | Designates the type of node that was intialized |
+

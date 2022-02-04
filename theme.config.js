@@ -1,12 +1,13 @@
 export default {
   github: 'https://github.com/L2-Technology/docs',
   docsRepositoryBase: 'https://github.com/L2-Technology/docs/blob/main',
+  projectChatLink: 'https://discord.gg/bneS492Tqu',
   titleSuffix: ' – Sensei',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">Sensei</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        Enterprise-grade lightning network implementation
+        A lightning network implementation for everyone
       </span>
     </>
   ),
@@ -16,14 +17,14 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Sensei Documentation: an enterprise-grade lightning node implementation" />
-      <meta name="og:description" content="Sensei Documentation: an enterprise-grade lightning node implementation" />
+      <meta name="description" content="Sensei Documentation: a lightning node implementation for everyone" />
+      <meta name="og:description" content="Sensei Documentation: a lightning node implementation for everyone" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="twitter:image" content="https://l2.technology/images/sensei_screenshot.png" />
       <meta name="twitter:site:domain" content="docs.l2.technology" />
       <meta name="twitter:url" content="https://docs.l2.technology" />
-      <meta name="og:title" content="Sensei Documentation: an enterprise-grade lightning node implementation" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="og:title" content="Sensei Documentation: a lightning node implementation for everyone" />
+      <meta name="og:image" content="https://l2.technology/images/sensei_screenshot.png" />
       <meta name="apple-mobile-web-app-title" content="Sensei Documentation" />
       <link
         rel="apple-touch-icon"
@@ -61,7 +62,8 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
+  darkMode: true,
+  defaultMenuCollapsed: true,
   footerEditLink: 'Edit this page on GitHub',
   footerText: <>L2 Technology © {new Date().getFullYear()}</>,
-  unstable_faviconGlyph: '👋',
 }

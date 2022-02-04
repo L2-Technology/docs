@@ -1,0 +1,59 @@
+# List Nodes
+
+This method lists all of your nodes child nodes.
+
+### Endpoint
+
+GET `/v1/nodes`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Pagination Request Parameters
+<br/>
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| page  | Integer | The page number to return |
+| take  | Integer | How many items to include per page |
+| query | String  | Optional parameter to search for nodes by username, alias, or pubkey |
+
+### Pagination Response Parameters
+<br/>
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| has_more | Boolean | Whether or not there are any more pages after the one requested |
+| total | Integer | The total number of items for the provided request parameters |
+
+### Request Parameters
+
+<br/>
+
+There are no additional request parameters.
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| nodes | Node[] | A list of node objects |
+
+
+### Node Object
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| id | Integer | Internal auto-incremented indentifier |
+| external_id | String | An auto-generated identifier that is globally unique |
+| role | Integer | What type of node this is. 0 = admin, 1 => child |
+| username | String | The username used to log into this node |
+| alias | String | The alias broadcast to the lightning network |
+| network | String | The network this node is connected to (Regtest, Testnet, Mainnet, etc) |
+| listen_addr | String | The hostname this node is listening on for p2p connections |
+| listen_port | Integer | The port this node is listening on for p2p connections |
+| pubkey | String | The node's public key or node identifier |
+| created_at | String | A timestamp when this node was created |
+| updated_at | String | A timestamp the last time any of these fields were updated |
+| status | Integer | Whether the node is stopped or running |

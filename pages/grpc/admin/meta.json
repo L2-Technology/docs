@@ -1,0 +1,14 @@
+{
+    "init": "Init Sensei",
+    "list_nodes": "List Nodes",
+    "create_node": "Create Node",
+    "start_node": "Start Node",
+    "stop_node": "Stop Node",
+    "delete_node": "Delete Node",
+    "status": "Node Status",
+    "start": "Start Sensei",
+    "login": "Login",
+    "logout": "Logout",
+    "get_config": "Get Config",
+    "update_config": "Update Config"
+}

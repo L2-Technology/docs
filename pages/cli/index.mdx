@@ -1,0 +1,23 @@
+# senseicli - A command line interface for managing your Sensei node
+
+The CLI tool will communicate with the Sensei Daemon over GRPC using the `admin.macaroon` file located in the specified nodes data directory.
+
+## Options
+
+The CLI tool has a couple options you can use to change the default behavior.
+
+### Data Directory (--datadir [-d])
+
+The data directory is where Sensei stores of all it's data. The default is your platforms home directory: <br/><br/>
+
+| Platform | Value | Example |
+|----------|-------|---------|
+| Linux | $HOME | /home/alice/.sensei |
+| Mac OS | $HOME | /Users/Alice/.sensei |
+| Windows | FOLDERID_Profile | C:\Users\Alice\.sensei |
+
+Use this option if you use a custom directory when running senseid.
+
+### Node Pubkey (--node [-n])
+
+The node pubkey you want to manage.  This will default to the admin node.
