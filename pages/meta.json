@@ -2,7 +2,7 @@
   "index": "Introduction",
   "get-started": "Get Started",
   "authentication": "Authentication",
-  "rest": "HTTP API",
+  "http": "HTTP API",
   "cli": "CLI",
   "grpc": "GRPC API"
 }
