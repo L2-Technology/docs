@@ -2,7 +2,7 @@
 
 This method initializes a brand new Sensei node.  It can only be called once during intial setup.  It is used to set your node username, alias, passphrase, and initial configuration.
 
-This method will also instantiate your seed phrase and `sensei.macaroon` file.  This means this endpoint is unauthenticated.
+This method will also instantiate your seed phrase and `admin.macaroon` file.  This means this endpoint is unauthenticated.
 
 
 ### Endpoint
@@ -32,7 +32,7 @@ No authentication required.
 | Param | Type | Description |
 | ----- | ---- | ----------- |
 | pubkey | String | Your node public key.  This is often described as your node's id |
-| macaroon | String | Hex encoded `sensei.macaroon` file |
+| macaroon | String | Hex encoded `admin.macaroon` file |
 | external_id | String | An internal identifier for your node |
 | role | String | Designates the type of node that was intialized |
 
