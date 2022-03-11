@@ -1,0 +1,25 @@
+# StartNode
+
+Starts a stopped lightweight node.
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### gRPC Request: AdminStartNodeRequest
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | The node's public key |
+| passphrase | String | The node's passphrase used for logging into the admin panel and decrypting the seed |
+
+### gRPC Response: AdminStartNodeResponse
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| macaroon | String | The macaroon used to authenticate requests to this node |
+

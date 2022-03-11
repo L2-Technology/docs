@@ -1,0 +1,29 @@
+# CreateNode
+
+This method will create a new lightweight node as a child of the existing Sensei node. You must provide a username and passrphase that will be used to log into the node's administration panel.
+
+The method will return the node's pubkey and macaroon. This information is required to interact with the node in the future.
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### gRPC Request: CreateNodeRequest
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| username | String | Used for logging into the web administration panel |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
+| alias | String | The name of your node that will be broadcast to the lightning network |
+| start | Boolean | Whether or not to also unlock and start your node upon successful init |
+
+### gRPC Response: CreateNodeResponse
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | The node's public key.  This is often described as the node's id |
+| macaroon | String | Hex encoded `admin.macaroon` |
