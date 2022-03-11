@@ -1,0 +1,24 @@
+# StartAdmin
+
+This method starts the Sensei node. On success, it will include the macaroon in the response body. This method can be used to start and login to your node using one request.
+
+### Authentication
+
+This request is unauthenticated but requires a valid passphrase.
+
+### gRPC Request: StartAdminRequest
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
+
+### gRPC Response: StartAdminResponse
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | Your node public key.  This is often described as your node's id |
+| macaroon | String | Hex encoded `admin.macaroon` |

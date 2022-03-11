@@ -1,0 +1,20 @@
+## Pagination
+
+### Pagination Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| page  | Integer | The page number to return |
+| take  | Integer | How many items to include per page |
+| query | String  | Optional parameter to search for nodes by username, alias, or pubkey |
+
+### Pagination Response Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| has_more | Boolean | Whether or not there are any more pages after the one requested |
+| total | Integer | The total number of items for the provided request parameters |

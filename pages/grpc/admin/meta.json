@@ -1,14 +1,10 @@
 {
-    "init": "Init Sensei",
-    "list_nodes": "List Nodes",
-    "create_node": "Create Node",
-    "start_node": "Start Node",
-    "stop_node": "Stop Node",
-    "delete_node": "Delete Node",
-    "status": "Node Status",
-    "start": "Start Sensei",
-    "login": "Login",
-    "logout": "Logout",
-    "get_config": "Get Config",
-    "update_config": "Update Config"
+    "create_admin": "Create Admin",
+    "start_admin": "Start Admin",
+    "list_nodes": "List Lightweight Nodes",
+    "create_node": "Create Lightweight Node",
+    "delete_node": "Delete Lightweight Node",
+    "status": "Get Status",
+    "start_node": "Start Lightweight Node",
+    "stop_node": "Stop Lightweight Node"
 }

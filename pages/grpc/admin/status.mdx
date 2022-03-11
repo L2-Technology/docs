@@ -1,0 +1,26 @@
+# GetStatus
+
+Returns information about your node.
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### gRPC Request: GetStatusRequest
+
+There are no parameters in the request body.
+
+### gRPC Response: GetStatusResponse
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| alias | String (optional) | The alias used to name your node on the lightning network |
+| created | Boolean | A flag for whether or not the admin node has been setup yet |
+| running | Boolean | A flag for whether or not the admin node is running |
+| authenticated | Boolean | A flag for whether or not this request was properly authenticated |
+| pubkey | String (optional) | Your node public key.  This is often described as your node's id |
+| username | String (optional) | The username used to login to this node's admin panel |
+| role | String (optional) | Designates the type of node that was intialized |
+
