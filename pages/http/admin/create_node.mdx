@@ -23,7 +23,7 @@ You must authenticate using the admin node's token.
 | passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
 | alias | String | The name of your node that will be broadcast to the lightning network |
 | start | Boolean | Whether or not to also unlock and start your node upon successful init |
-| entropy | String | Optional param for gereating keys |
+| entropy | String | Optional param to recover wallet |
 | cross_node_entropy | String | Optional param for phantom payments |
 
 ### Response Parameters
@@ -37,5 +37,5 @@ You must authenticate using the admin node's token.
 | listen_addr | String | node listen IP address |
 | listen_port | Integer | node listen port |
 | id | String | The node's id (same as public key) |
-| entropy | String | ?? |
-| cross_node_entropy | String | ?? |
+| entropy | String | wallet keys |
+| cross_node_entropy | String | phantom payments keys |
