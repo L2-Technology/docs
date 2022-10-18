@@ -23,8 +23,8 @@ You must authenticate using the admin node's token.
 | passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
 | alias | String | The name of your node that will be broadcast to the lightning network |
 | start | Boolean | Whether or not to also unlock and start your node upon successful init |
-| entropy (optional) | String | ?? |
-| cross_node_entropy (optional) | String | ?? |
+| entropy | String | Optional ?? |
+| cross_node_entropy | String | Optional ?? |
 
 ### Response Parameters
 
@@ -35,7 +35,7 @@ You must authenticate using the admin node's token.
 | pubkey | String | The node's public key.  This is often described as the node's id |
 | macaroon | String | Hex encoded `admin.macaroon` file |
 | listen_addr | String | node listen IP address |
-| listen_port | i32 | node listen port |
+| listen_port | Integer | node listen port |
 | id | String | The node's id (same as public key) |
 | entropy | String | ?? |
 | cross_node_entropy | String | ?? |
