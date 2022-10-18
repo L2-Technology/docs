@@ -10,6 +10,4 @@
     "Admin_login": "Admin Login",
     "Node_login": "Node Login
     "logout": "Logout",
-    "get_config": "Get Config",
-    "update_config": "Update Config"
 }
