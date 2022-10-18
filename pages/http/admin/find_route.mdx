@@ -8,7 +8,7 @@ POST `/api/v1/ldk/network/route`
 
 ### Authentication
 
-You must authenticate using the ??
+You must authenticate using an admin token
 
 
 ### Request Parameters
@@ -17,7 +17,10 @@ You must authenticate using the ??
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| username | String | Used for logging into the web administration panel |
+| payer_public_key_hex | String | |
+| route_params_hex | String | |
+| payment_hash_hex | String | |
+| first_hops | Vec<String> | |
 
 
 ### Response Parameters
@@ -26,5 +29,5 @@ You must authenticate using the ??
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| pubkey | String | The node's public key.  This is often described as the node's id |
+| route | String | |
 

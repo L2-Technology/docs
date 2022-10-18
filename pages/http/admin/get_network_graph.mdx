@@ -8,17 +8,12 @@ GET `/api/v1/ldk/network/graph`
 
 ### Authentication
 
-You must authenticate using the ??
+You must authenticate using an admin token
 
 
 ### Request Parameters
 
-<br/>
-
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| username | String | Used for logging into the web administration panel |
-
+There are no request parameters.
 
 ### Response Parameters
 
@@ -26,5 +21,6 @@ You must authenticate using the ??
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| pubkey | String | The node's public key.  This is often described as the node's id |
+| nodes | <Vec<String> | |
+| channels | <Vec<String> | |
 

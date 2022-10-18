@@ -19,8 +19,8 @@
     "list_tokens": "List Tokens",
     "find_route": "Find Route",
     "get_network_graph": "Get Network Graph",
-    "gossip_channel_announcement": "Announce Channel"
-    "gossip_channel_update": "Update Channel",
+    "gossip_channel_announcement": "Gossip Channel Announcement"
+    "gossip_channel_update": "Gossip Channel Update",
     "path_failed": "Path Failed",
     "path_successful": "Path Successful",
 }
