@@ -8,7 +8,7 @@ POST `/api/v1/nodes/batch`
 
 ### Authentication
 
-You must authenticate using the ??
+You must authenticate using an admin token.
 
 
 ### Request Parameters
@@ -17,16 +17,9 @@ You must authenticate using the ??
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| nodes | Vec<CreateNodeParams> | file including batch node details |
+| nodes | Vec[CreateNodeParams] | file including batch node details |
 
-pub struct CreateNodeParams {
-    pub username: String,
-    pub passphrase: String,
-    pub alias: String,
-    pub start: bool,
-    pub entropy: Option<String>,
-    pub cross_node_entropy: Option<String>,
-}
+
 
 
 ### Response Parameters
@@ -35,5 +28,5 @@ pub struct CreateNodeParams {
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| nodes | Vec<NodeCreateResult> |  |
+| nodes | Vec[NodeCreateResult] |  |
 
