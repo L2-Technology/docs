@@ -6,7 +6,7 @@ Currently Sensei only supports the single `macaroon` file but in a future versio
 
 ### HTTP API
 
-The macaroon or admin token value must be included either in an HTTP Header or HTTP Cookie with name `macaroon` or `token`. 
+A macaroon or admin token value must be included either in an HTTP Header or HTTP Cookie with name `macaroon` or `token`. 
 
 Sensei exposes a `/v1/login` and `/v1/logout` endpoints that can be used to set and remove the macaroon cookie automatically.  The `login` endpoint requires the node's `username` and `passphrase` to authenticate and the response will include a `Set-Cookie` header that contains the admin macaroon.
 
