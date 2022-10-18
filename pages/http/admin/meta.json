@@ -9,7 +9,7 @@
     "status": "Node Status",
     "start": "Start Sensei",
     "admin_login": "Admin Login",
-    "node_login": "Node Login,
+    "node_login": "Node Login",
     "logout": "Logout",
     "batch_create_nodes": "Batch Create Nodes",
     "chain_update": "Chain Update",
