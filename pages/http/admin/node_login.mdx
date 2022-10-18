@@ -1,1 +1,34 @@
 
+# Node Login
+
+Login to your Sensei node.  This method is useful for getting the token to authenticate future requests to the node.
+
+### Endpoint
+
+POST `/api/v1/nodes/login`
+
+### Authentication
+
+This endpoint is unauthenticated but requires a valid username and passphrase combination.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| username | String | Used for logging into the node web panel |
+| passphrase | String | Used to encrypt seed information on disk and as your password for logging into the node web panel |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| alias | String | The name of your node that will be broadcast to the lightning network |
+| macaroon | String | Hex encoded `macaroon` file |
+| pubkey | String | The node's public key. This is often described as the node's id |
+| role | Integer | Designates the type of node that was intialized |
+
+
