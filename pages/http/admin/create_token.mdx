@@ -1,10 +1,10 @@
-# List Tokens
+# Create Token
 
 
 
 ### Endpoint
 
-GET `/api/v1/tokens`
+POST `/api/v1/tokens`
 
 ### Authentication
 
@@ -17,7 +17,10 @@ You must authenticate using an admin token
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| username | String | Used for logging into the web administration panel |
+| name | String | |
+| expires_at | u64 | |
+| scope | String | |
+| single_use | bool | |
 
 
 ### Response Parameters
@@ -26,5 +29,5 @@ You must authenticate using an admin token
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| pubkey | String | The node's public key.  This is often described as the node's id |
+| token | String | |
 

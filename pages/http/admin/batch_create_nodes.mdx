@@ -1,1 +1,39 @@
+# Batch Create Nodes
+
+
+
+### Endpoint
+
+POST `/api/v1/nodes/batch`
+
+### Authentication
+
+You must authenticate using the ??
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| Nodes | Vec<CreateNodeParams> | file including batch node details |
+
+pub struct CreateNodeParams {
+    pub username: String,
+    pub passphrase: String,
+    pub alias: String,
+    pub start: bool,
+    pub entropy: Option<String>,
+    pub cross_node_entropy: Option<String>,
+}
+
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| pubkey | String | The node's public key.  This is often described as the node's id |
 
