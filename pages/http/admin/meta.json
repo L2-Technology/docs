@@ -7,7 +7,8 @@
     "delete_node": "Delete Node",
     "status": "Node Status",
     "start": "Start Sensei",
-    "login": "Login",
+    "Admin_login": "Admin Login",
+    "Node_login": "Node Login
     "logout": "Logout",
     "get_config": "Get Config",
     "update_config": "Update Config"
