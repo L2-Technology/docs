@@ -1,14 +1,15 @@
-# Delete Node
+# Connect Gossip Peer
 
-Delete a lightweight node.
+
 
 ### Endpoint
 
-POST `/api/v1/nodes/delete`
+POST `/api/v1/peers/connect`
 
 ### Authentication
 
 You must authenticate using an admin token.
+
 
 ### Request Parameters
 
@@ -16,8 +17,9 @@ You must authenticate using an admin token.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| pubkey | String | The node's public key |
+| node_connection_string | String | Public key and address of target gossip peer "publickey@address" |
+
 
 ### Response Parameters
 
-There are no response parameters
+There are no response parameters.

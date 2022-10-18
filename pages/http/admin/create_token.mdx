@@ -1,0 +1,33 @@
+# Create Token
+
+
+
+### Endpoint
+
+POST `/api/v1/tokens`
+
+### Authentication
+
+You must authenticate using an admin token.
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| name | String | |
+| expires_at | u64 | |
+| scope | String | |
+| single_use | bool | |
+
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| token | String | |
+

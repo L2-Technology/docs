@@ -1,14 +1,15 @@
-# Delete Node
+# Path Failed
 
-Delete a lightweight node.
+
 
 ### Endpoint
 
-POST `/api/v1/nodes/delete`
+POST `/api/v1/ldk/network/path/failed`
 
 ### Authentication
 
 You must authenticate using an admin token.
+
 
 ### Request Parameters
 
@@ -16,8 +17,12 @@ You must authenticate using an admin token.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| pubkey | String | The node's public key |
+| path | Vec[String] | |
+| short_channel_id | u64 | |
+
+
 
 ### Response Parameters
 
-There are no response parameters
+There are no response parameters.
+

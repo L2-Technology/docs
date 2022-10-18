@@ -1,0 +1,33 @@
+# Find Route
+
+
+
+### Endpoint
+
+POST `/api/v1/ldk/network/route`
+
+### Authentication
+
+You must authenticate using an admin token.
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| payer_public_key_hex | String | |
+| route_params_hex | String | |
+| payment_hash_hex | String | |
+| first_hops | Vec[String] | |
+
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| route | String | |
+

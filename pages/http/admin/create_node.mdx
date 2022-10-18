@@ -6,12 +6,11 @@ The method will return the nodes pubkey and macaroon.  This information is requi
 
 ### Endpoint
 
-POST `/v1/nodes`
+POST `/api/v1/nodes`
 
 ### Authentication
 
-You must authenticate using the admin node's macaroon.
-
+You must authenticate using an admin token.
 
 ### Request Parameters
 
@@ -23,6 +22,8 @@ You must authenticate using the admin node's macaroon.
 | passphrase | String | Used to encrypt seed information on disk and as your password for logging into the web administration panel |
 | alias | String | The name of your node that will be broadcast to the lightning network |
 | start | Boolean | Whether or not to also unlock and start your node upon successful init |
+| entropy | String | Optional param to recover wallet |
+| cross_node_entropy | String | Optional param for phantom payments |
 
 ### Response Parameters
 
@@ -31,4 +32,9 @@ You must authenticate using the admin node's macaroon.
 | Param | Type | Description |
 | ----- | ---- | ----------- |
 | pubkey | String | The node's public key.  This is often described as the node's id |
-| macaroon | String | Hex encoded `admin.macaroon` file |
+| macaroon | String | The macaroon used to authenticate requests to this node |
+| listen_addr | String | The hostname this node is listening on for p2p connections  |
+| listen_port | Integer | The port this node is listening on for p2p connections |
+| id | String | The node's id (same as public key) |
+| entropy | String | wallet keys |
+| cross_node_entropy | String | phantom payments keys |

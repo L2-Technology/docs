@@ -1,0 +1,32 @@
+# Batch Create Nodes
+
+
+
+### Endpoint
+
+POST `/api/v1/nodes/batch`
+
+### Authentication
+
+You must authenticate using an admin token.
+
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| nodes | Vec[CreateNodeParams] | file including batch node details |
+
+
+
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| nodes | Vec[NodeCreateResult] |  |
+
