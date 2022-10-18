@@ -45,15 +45,13 @@ There are no additional request parameters.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| id | Integer | Internal auto-incremented indentifier |
-| external_id | String | An auto-generated identifier that is globally unique |
+| id | String | The node's id (same as public key) |
 | role | Integer | What type of node this is. 0 = admin, 1 => child |
 | username | String | The username used to log into this node |
 | alias | String | The alias broadcast to the lightning network |
 | network | String | The network this node is connected to (Regtest, Testnet, Mainnet, etc) |
 | listen_addr | String | The hostname this node is listening on for p2p connections |
 | listen_port | Integer | The port this node is listening on for p2p connections |
-| pubkey | String | The node's public key or node identifier |
 | created_at | String | A timestamp when this node was created |
 | updated_at | String | A timestamp the last time any of these fields were updated |
 | status | Integer | Whether the node is stopped or running |
