@@ -1,0 +1,32 @@
+# Open Channel
+
+Requests to open a channel with a node.
+
+### Endpoint
+
+POST `/api/v1/node/channels/open`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| amount_sats | Integer | Channel value in satoshis |
+| counterparty_host_port | String | Counterparty's host `<host_ip>:<port>` |
+| counterparty_pubkey | String | Counterparty's public key |
+| public | Boolean | Is the channel public |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| error | Boolean | If the initiated request returned an error |
+| error_message | String | Error message |
+| channel_id | String | Channel ID |

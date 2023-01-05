@@ -1,0 +1,30 @@
+# Get Balance
+
+This method returns the on-chain and off-chain balances of our node. 
+
+### Endpoint
+
+GET `/api/v1/node/wallet/balance`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+There are no request parameters.
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| onchain_balance_sats | Integer | Balance of on-chain wallet in satoshis |
+| channel_balance_msats | Integer | Balance in channels in milli-satoshis |
+| channel_outbound_capacity_msats | Integer | Total outbound channel capacity |
+| channel_inbound_capacity_msats | Integer | Total inbound channel capacity |
+| usable_channel_outbound_capacity_msats | Integer | Total usable outbound channel capacity |
+| usable_channel_inbound_capacity_msats | Integer | Total usable inbound channel capacity |

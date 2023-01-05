@@ -1,0 +1,28 @@
+# Start 
+
+Start the node.
+
+### Endpoint
+
+POST `/api/v1/nodes/start`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| passphrase | String | The admin passphrase |
+| pubkey | String | The node's public key |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| macaroon | String | The admin macaroon needed to interact with the node |

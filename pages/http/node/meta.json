@@ -1,6 +1,7 @@
 {
     "get_address": "Get Address",
     "get_balance": "Get Balance",
+    "transactions": "List on-chain transactions",
     "channels": "List Channels",
     "payments": "List Payments",
     "info": "Node Info",

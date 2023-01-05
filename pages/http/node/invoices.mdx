@@ -1,0 +1,28 @@
+# Invoices
+
+This method generates a BOLT11 invoice with an amount and description.
+
+### Endpoint
+
+POST `/api/v1/node/invoices`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| amt_msat | Int | Requested amount in milli-satoshis |
+| description | String | Description of invoice |
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| invoice | String | Freshly generated BOLT11 invoice |

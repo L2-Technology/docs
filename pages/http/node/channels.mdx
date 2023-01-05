@@ -1,0 +1,48 @@
+# Get Channels
+
+This method fetches channels for our node.
+
+### Endpoint
+
+GET `/api/v1/node/channels`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| take | Integer | Number of channels per page |
+| page | Integer | Page number to fetch |
+| query | String | Search query for channels |
+
+### Response Parameters
+
+<br />
+
+The response contains an array of Channels containing the following:
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| channel_id | String | Channel ID |
+| funding_txid | String | Funding transaction ID |
+| funding_txid_index | Integer | Transaction index of funcding transaction |
+| short_channel_id | Integer | Truncated channel ID |
+| channel_value_satoshis | Integer | Value of channel in satoshis |
+| balance_msat | Integer | Balance in milli-satoshis |
+| unspendable_punishment_reserve | Integer | Reserve amount that is unspendable |
+| user_channel_id | Integer | User channel ID |
+| outbound_capacity_msat | Integer | Outbound capacity in milli-satoshis |
+| inbound_capacity_msat | Integer | Inbound capacity in milli-satoshis |
+| confirmations_required | Integer | Number of on-chain confirmations required |
+| force_close_spend_delay | Integer | Delay when force-closing a channel |
+| is_outbound | Boolean | Is the channel outbound |
+| is_channel_ready | Boolean | Is the channel ready |
+| is_usable | Boolean | Is channel usable |
+| is_public | Boolean | Is the channel public |
+| counterpary_pubkey | String | Public key of channel partner |
+| alias | String | Alias of channel partner |
