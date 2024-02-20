@@ -1,0 +1,25 @@
+# Get Address
+
+This method returns an on-chain address for the node in bech32 format. Funding the node is required before sending and recieving payments. 
+
+### Endpoint
+
+GET `/api/v1/node/wallet/address`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+There are no request parameters.
+
+### Response Parameters
+
+<br />
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| address | String | Bech32-encoded bitcoin address |

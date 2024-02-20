@@ -1,0 +1,53 @@
+# Get Payments
+
+This method returns incoming payments to our node. It includes both pending and confirmed payments as well as other information such as:
+- Label
+- Amount
+- Payer's node information
+- Payment hash
+
+### Endpoint
+
+GET `/api/v1/node/payments`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+The following GET parameters can be used to filter payments:
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| origin | String | Can be "incoming" (payments received) or "outgoing" (payments sent) |
+| take | Integer | Number of payments per page |
+| page | Integer | Page number to fetch |
+| query | String | Search query for payments |
+| status | String | Status of payment e.g. "pending" |
+
+### Response Parameters
+
+<br />
+
+The response is a json array containing payments. Each payment object contains:
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| id | String | Payment ID |
+| node_id | String | Node ID |
+| payment_hash | String | Payment hash |
+| status | String | If the payment is pending or confirmed |
+| origin | String | If the payment is incoming or outgoing |
+| created_at | Integer | Timestamp when the payment was requested |
+| updated_at | Integer | Timestamp when the payment was updated |
+| created_by_node_id | String | Node ID of the node initiating the payment |
+| received_by_node_id | String | Node ID of the receiving node |
+| amt_msat | Integer | Value of the payment in milli-satoshis |
+| fee_paid_msat | Integer | Fee paid in milli-satoshis |
+| preimage | String | Preimage for the payment hash |
+| secret | String | Payment secret |
+| label | String | Payment label |
+| invoice | String | BOLT11 invoice |

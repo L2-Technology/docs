@@ -1,0 +1,36 @@
+# Get Transactions
+
+This method returns on-chain transactions to your node.  
+
+### Endpoint
+
+GET `/api/v1/node/transactions`
+
+### Authentication
+
+You must authenticate using the admin node's macaroon.
+
+### Request Parameters
+
+<br/>
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| take | Integer | Number of transactions per page |
+| page | Integer | Page number to fetch |
+| query | String | Search query for transactions |
+
+### Response Parameters
+
+<br />
+
+The response is an array of transactions. Each transaction object contains the following:
+
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| transaction | JSON object | Contains version, locktime, inputs and outputs of transaction |
+| txid | String | Transaction ID |
+| fee | Integer | Transaction fee |
+| received | Integer | Total inbound channel capacity |
+| sent | Integer | Total usable outbound channel capacity |
+| confirmation_time | JSON object | Contains block height and timestamp |
